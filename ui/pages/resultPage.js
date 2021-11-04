@@ -1,9 +1,4 @@
-const printConso = require("../../utils/printConso");
-const header = require("../components/header");
-const cityHops = require("../components/cityHops");
-const cityHop = require("../components/cityHop");
-const appSelectButtons = require("../components/appSelectButtons");
-const map = require("../components/map");
+
 
 module.exports = function resultPage(data) {
 
@@ -15,7 +10,6 @@ module.exports = function resultPage(data) {
         fillParent: true,
         crossAxisAlignment: "stretch",
         children: [
-            header(),
             {
                 type: "flex",
                 direction: "col",

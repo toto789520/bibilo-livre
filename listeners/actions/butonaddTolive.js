@@ -3,6 +3,9 @@ const _const = require("../../utils/const");
 
 
 module.exports = async (data, props, event) => {
-    data.page = props.page;
+    console.log(data)
+    data.livre.push(data.formulaire.nom)
+    data.page = 'homePage'
+    console.log(data)
     return data;
 }

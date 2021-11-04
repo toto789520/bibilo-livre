@@ -3,6 +3,7 @@ const _const = require("../../utils/const");
 
 
 module.exports = async (data, props, event) => {
-    data.page = props.page;
+    console.log(event)
+    data.formulaire.nom = event.value;
     return data;
 }

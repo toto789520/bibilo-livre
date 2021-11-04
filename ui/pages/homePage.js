@@ -1,6 +1,4 @@
-const appCheckbox = require("../components/appCheckbox");
-const appForm = require("../components/appForm");
-const header = require("../components/header");
+
 
 module.exports = function homePage(data) {
     return {
@@ -11,7 +9,6 @@ module.exports = function homePage(data) {
         scroll: true,
         crossAxisAlignment: "stretch",
         children: [
-            header(),
             {
                 type: "flex",
                 direction: "col",
@@ -37,12 +34,41 @@ module.exports = function homePage(data) {
                 padding: {
                     left: 2,
                     right: 2
-                },
+                }, //créun  boution avec le non du live
+                children: data.livre.map(livre => {
+                    return {
+                        type: 'button',
+                        text: `${livre}`,
+                        onPressed: {
+                            action: 'adddicision',
+                            props: {
+                                livre: livre
+                            }
+                        }
+
+                    }
+                })
+            },
+            {
+                type: "flex",
+                direction: "col",
+                crossAxisAlignment: "center",
+                spacing: 2,
+                padding: {
+                    left: 2,
+                    right: 2},
                 children: [
+                    {
+                    type: 'button',
+                    text: '+ ajouté un live',
+                    onPressed: {
+                        action: `NavigateTo`,
+                        props: {
+                            page: 'addpage'
+                        } 
+                    }
+                }]}
+            ]
+        }
 
-                ]
-            }
-        ]
     }
-
-}
