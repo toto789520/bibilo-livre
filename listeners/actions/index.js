@@ -1,0 +1,5 @@
+module.exports = {
+  DEFAULT_ACTION: "DefaultAction",
+  INIT_DATA: "InitData",
+  NAVIGATE_TO: "NaviagateTo"
+}

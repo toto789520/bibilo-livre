@@ -1,0 +1,22 @@
+{
+  "name": "lenra-book-library",
+  "version": "1.0.0",
+  "description": "Lenra's book library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "Shiipou",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.23.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1"
+  }
+}
