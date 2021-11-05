@@ -1,7 +1,5 @@
 'use strict'
 
-const actions = require("./actions");
-
 module.exports = async (action, data, props, event) => {
   //console.log("Call listener", action, data, props, event);
   try {

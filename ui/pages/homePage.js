@@ -63,16 +63,17 @@ module.exports = function homePage(data) {
                     right: 2},
                 children: [
                     {
-                    type: 'button',
-                    text: '+ ajouté un live',
-                    onPressed: {
-                        action: `NavigateTo`,
-                        props: {
-                            page: 'addpage'
-                        } 
+                        type: 'button',
+                        text: '+ ajouté un live',
+                        onPressed: {
+                            action: `NavigateTo`,
+                            props: {
+                                page: 'addpage'
+                            } 
+                        }
                     }
-                }]}
-            ]
-        }
-
+                ]
+            }
+        ]
     }
+}

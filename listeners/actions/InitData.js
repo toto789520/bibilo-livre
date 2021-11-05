@@ -1,5 +1,3 @@
-const _const = require("../../utils/const");
-
 module.exports = async function initData() {
   return {
     page: "homePage",

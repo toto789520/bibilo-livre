@@ -1,7 +1,5 @@
 'use strict'
 
-const pages = require("./pages");
-
 function getCurrentPage(pageName, data) {
 	const page = require(`./pages/${pageName}`);
 

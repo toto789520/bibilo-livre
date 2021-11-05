@@ -1,5 +1,3 @@
-const pages = require("../../ui/pages")
-const _const = require("../../utils/const")
 const fs = require('fs')
 const request = require('request')
 const { v4: uuidv4 } = require('uuid');
