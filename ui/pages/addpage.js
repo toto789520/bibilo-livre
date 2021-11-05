@@ -24,13 +24,42 @@ module.exports = function addPage(data) {
                     }
                     },
                 {
+                    type: 'textfield',
+                    value: '',
+                    hintText: 'les page',
+                    label: 'nobre',
+                    onChanged: {
+                        action: 'addTopage'
+                    }
+                },
+                {
+                    type: 'textfield',
+                    value: '',
+                    hintText: 'lien pour des image',
+                    label: 'lien image',
+                    onChanged: {
+                        action: 'imagelien'
+                    }
+                },
+                {
                     type: 'button',
                     text: '+ ajouté un live',
                     onPressed: {
                         action: 'butonaddToLive'
                     }
 
-                }
+                },
+                {
+                    type: 'button',
+                    text: 'retour',
+                    onPressed:{
+                        action: 'NavigateTo',
+                        props:{
+                            page: 'homePage'
+                        }
+                    }
+                },
+               
                 ]
             }
         ]

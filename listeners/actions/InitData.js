@@ -7,6 +7,9 @@ module.exports = async function initData() {
     formulaire: {
       nom: null
     },
-    buttonlivre: null
+    buttonlivre: null,
+    buttonindex: null,
+    buttoncdpage: null,
+    buttoncdpagefaite: null
   }
 }

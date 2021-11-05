@@ -35,14 +35,18 @@ module.exports = function homePage(data) {
                     left: 2,
                     right: 2
                 }, //créun  boution avec le non du live
-                children: data.livre.map(livre => {
+                children: Object.entries(data.livre)
+                    .filter(entry => entry[1] != null)
+                    .map(entry => {
+                    console.log(entry)
                     return {
                         type: 'button',
-                        text: `${livre}`,
+                        text: `${entry[1].name}`,
                         onPressed: {
                             action: 'adddicision',
                             props: {
-                                livre: livre
+                                livre: entry[1],
+                                index: entry[0]
                             }
                         }
 
