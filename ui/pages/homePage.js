@@ -3,11 +3,11 @@
 module.exports = function homePage(data) {
     return {
         type: "flex",
-        direction: "col",
+        direction: "row",
         spacing: 4,
         fillParent: true,
         scroll: true,
-        crossAxisAlignment: "stretch",
+        mainAxisAlignment: "stretch",
         children: [
             {
                 type: "flex",
