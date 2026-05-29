@@ -10,10 +10,10 @@
   "author": "Shiipou",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.23.0",
+    "axios": "^0.31.1",
     "crypto": "^1.0.1",
     "request": "^2.88.2",
-    "uuid": "^8.3.2"
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0"
